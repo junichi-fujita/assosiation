@@ -1,26 +1,17 @@
 # == Schema Information
 #
-# Table name: blogs
+# Table name: favorites
 #
 #  id         :bigint           not null, primary key
-#  content    :text
-#  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  user_id    :bigint
-#
-# Indexes
-#
-#  index_blogs_on_user_id  (user_id)
-#
-# Foreign Keys
-#
-#  fk_rails_...  (user_id => users.id)
+#  blog_id    :integer
+#  user_id    :integer
 #
 
 require 'test_helper'
 
-class BlogTest < ActiveSupport::TestCase
+class FavoriteTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
